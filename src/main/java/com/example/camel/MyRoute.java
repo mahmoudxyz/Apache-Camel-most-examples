@@ -9,8 +9,8 @@ public class MyRoute extends RouteBuilder {
     @Override
     public void configure() throws Exception {
         from("file:/home/mahmoudxyz/Downloads/camel/files/input/?fileName=test2.html&noop=true")
-                .log("test?>>>>>>>>>>>>>>>>")
+                .log("the has been read")
                 .to("file:/home/mahmoudxyz/Downloads/camel/files/output")
-                .log("saved");
+                .log("written");
     }
 }
